@@ -5,7 +5,7 @@ BACKUP_DIR=$2
 
 if [ ! -d $CURRENT_WORK_DIR ]
   then 
-    echo "[${CURRENT_WORK_DIR}] is not directory..."
+    echo "${CURRENT_WORK_DIR}はディレクトリではありません"
     exit 1
 fi
 
@@ -14,7 +14,7 @@ images=`find ${CURRENT_WORK_DIR} -maxdepth 1 -type f -name *.jpg -or -name *.png
 
 if [ -z $images ]
   then
-    echo "File does not exist..."
+    echo "ファイルが存在しません"
     exit 1
 fi
 

@@ -10,7 +10,7 @@ if [ ! -d $CURRENT_WORK_DIR ]
 fi
 
 # 直下の画像を取得
-images=`find ${CURRENT_WORK_DIR} -maxdepth 1 -type f -name *.jpg -or -name *.png -or -name *.gif`
+images=`find ${CURRENT_WORK_DIR} -maxdepth 1 -type f -name "*.jpg" -or -name "*.png" -or -name "*.gif"`
 
 if [ -z $images ]
   then
